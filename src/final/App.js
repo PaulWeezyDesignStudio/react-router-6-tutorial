@@ -2,14 +2,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import Home from './pages/Home';
 import About from './pages/About';
-import Products from './pages/Products';
+import Kittens from './pages/Kittens';
 import Error from './pages/Error';
 import SharedLayout from './pages/SharedLayout';
-import SingleProduct from './pages/SingleProduct';
+import SingleKitten from './pages/SingleKitten';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import ProtectedRoute from './pages/ProtectedRoute';
-import SharedProductLayout from './pages/SharedProductLayout';
+import SharedKittenLayout from './pages/SharedKittenLayout';
 function App() {
   const [user, setUser] = useState(null);
   return (
@@ -19,9 +19,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path='about' element={<About />} />
 
-          <Route path='products' element={<SharedProductLayout />}>
-            <Route index element={<Products />} />
-            <Route path=':productId' element={<SingleProduct />} />
+          <Route path='products' element={<SharedKittenLayout />}>
+            <Route index element={<Kittens />} />
+            <Route path=':kittenId' element={<SingleKitten />} />
           </Route>
 
           <Route path='login' element={<Login setUser={setUser}></Login>} />

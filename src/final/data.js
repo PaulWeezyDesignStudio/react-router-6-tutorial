@@ -1,4 +1,4 @@
-const products = [
+const kittens = [
   {
     id: 'recZkNf2kwmdBcqd0',
     name: 'Filaberta',
@@ -34,4 +34,4 @@ const products = [
   },
 ];
 
-export default products;
+export default kittens;
