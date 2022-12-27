@@ -151,7 +151,7 @@ Variables
     font-size: 2rem;
     background: transparent;
     border-color: transparent;
-    color: var(--clr-primary-5);
+    color: blueviolet;
     transition: var(--transition);
     cursor: pointer;
     /*animation: bounce 2s ease-in-out infinite;
