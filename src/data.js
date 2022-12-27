@@ -1,37 +1,162 @@
-const products = [
+import React from 'react';
+import {
+  FaBehance,
+  FaFacebook,
+  FaLinkedin,
+  FaTwitter,
+  FaSketch,
+  FaHome,
+  FaUserFriends,
+  FaFolderOpen,
+  FaCalendarAlt,
+  FaWpforms,
+} from 'react-icons/fa';
+export const links = [
   {
-    id: 'recZkNf2kwmdBcqd0',
-    name: 'accent chair',
-    image:
-      'https://dl.airtable.com/.attachmentThumbnails/e8bc3791196535af65f40e36993b9e1f/438bd160',
+    id: 1,
+    url: '/',
+    text: 'home',
+    icon: <FaHome />,
   },
   {
-    id: 'recEHmzvupvT8ZONH',
-    name: 'albany sectional',
-
-    image:
-      'https://dl.airtable.com/.attachmentThumbnails/0be1af59cf889899b5c9abb1e4db38a4/d631ac52',
+    id: 2,
+    url: '/team',
+    text: 'team',
+    icon: <FaUserFriends />,
   },
   {
-    id: 'rec5NBwZ5zCD9nfF0',
-    name: 'albany table',
-
-    image:
-      'https://dl.airtable.com/.attachmentThumbnails/7478483f40a2f56662a87b304bd4e104/707d397f',
+    id: 3,
+    url: '/projects',
+    text: 'projects',
+    icon: <FaFolderOpen />,
   },
   {
-    id: 'recd1jIVIEChmiwhe',
-    name: 'armchair',
-
-    image:
-      'https://dl.airtable.com/.attachmentThumbnails/530c07c5ade5acd9934c8dd334458b86/cf91397f',
+    id: 4,
+    url: '/calendar',
+    text: 'calendar',
+    icon: <FaCalendarAlt />,
   },
   {
-    id: 'recoM2MyHJGHLVi5l',
-    name: 'bar stool',
-    image:
-      'https://dl.airtable.com/.attachmentThumbnails/a6119fabf7256049cc0e8dbcdf536c9c/b0153f66',
+    id: 5,
+    url: '/documents',
+    text: 'documents',
+    icon: <FaWpforms />,
   },
 ];
 
-export default products;
+export const social = [
+  {
+    id: 1,
+    url: 'https://www.twitter.com',
+    icon: <FaFacebook />,
+  },
+  {
+    id: 2,
+    url: 'https://www.twitter.com',
+    icon: <FaTwitter />,
+  },
+  {
+    id: 3,
+    url: 'https://www.twitter.com',
+    icon: <FaLinkedin />,
+  },
+  {
+    id: 4,
+    url: 'https://www.twitter.com',
+    icon: <FaBehance />,
+  },
+  {
+    id: 5,
+    url: 'https://www.twitter.com',
+    icon: <FaSketch />,
+  },
+];
+
+const kittens = [
+  {
+    id: 'recZkNf2kwmdBcqd0',
+    name: 'Filaberta',
+    image: 'http://placekitten.com/200/300',
+  },
+  {
+    id: 'recEHmzvupvT8ZONH',
+    name: 'Garfield',
+
+    image: 'http://placekitten.com/200/300',
+  },
+  {
+    id: 'rec5NBwZ5zCD9nfF0',
+    name: 'Pancake',
+
+    image: 'http://placekitten.com/200/300',
+  },
+  {
+    id: 'recd1jIVIEChmiwhe',
+    name: 'Rocket',
+
+    image: 'http://placekitten.com/200/300',
+  },
+  {
+    id: 'recoM2MyHJGHLVi5l',
+    name: 'Fluffy',
+    image: 'http://placekitten.com/200/300',
+  },
+  {
+    id: 'recZkNf2kwmdBcqd0',
+    name: 'Bean',
+    image: 'http://placekitten.com/200/300',
+  },
+  {
+    id: 'recEHmzvupvT8ZONH',
+    name: 'Fat Head',
+
+    image: 'http://placekitten.com/200/300',
+  },
+  {
+    id: 'rec5NBwZ5zCD9nfF0',
+    name: 'Mean Kitty ',
+
+    image: 'http://placekitten.com/200/300',
+  },
+  {
+    id: 'recd1jIVIEChmiwhe',
+    name: 'Nice Kitty',
+
+    image: 'http://placekitten.com/200/300',
+  },
+  {
+    id: 'recoM2MyHJGHLVi5l',
+    name: 'Baby Bean',
+    image: 'http://placekitten.com/200/300',
+  },
+  {
+    id: 'recZkNf2kwmdBcqd0',
+    name: 'Baby Bean jr',
+    image: 'http://placekitten.com/200/300',
+  },
+  {
+    id: 'recEHmzvupvT8ZONH',
+    name: 'Baby Bean III',
+
+    image: 'http://placekitten.com/200/300',
+  },
+  {
+    id: 'rec5NBwZ5zCD9nfF0',
+    name: 'Baby Bean tha 4th',
+
+    image: 'http://placekitten.com/200/300',
+  },
+  {
+    id: 'recd1jIVIEChmiwhe',
+    name: 'Baby Bean numero 5',
+
+    image: 'http://placekitten.com/200/300',
+  },
+  {
+    id: 'recoM2MyHJGHLVi5l',
+    name: 'Fluffy',
+    image: 'http://placekitten.com/200/300',
+  },
+];
+
+export default kittens;

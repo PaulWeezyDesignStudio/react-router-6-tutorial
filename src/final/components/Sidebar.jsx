@@ -1,16 +1,5 @@
-import { Link } from 'react-router-dom';
-const Navbar = () => {
-  return (
-    <nav className='flex justify-evenly text-xl py-5'>
-      <Link to='/'>Home</Link>
-      <Link to='/about'>About</Link>
-      <Link to='/products'>Products</Link>
-    </nav>
-  );
-};
-export default Navbar;
 import React from 'react';
-import logo from './logo.svg';
+
 import { useGlobalContext } from '../context';
 import './sidebar.css';
 import { FaTimes, FaReact } from 'react-icons/fa';
@@ -61,7 +50,7 @@ const Sidebar = () => {
         </NavLink>
         <NavLink
           onClick={closeSidebar}
-          to="/contact"
+          to="/contact"W
           className={({ isActive }) => (isActive ? 'link active' : 'link')}
         >
           Contact
