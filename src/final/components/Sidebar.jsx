@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import { useGlobalContext } from '../context';
 import './sidebar.css';
 import { FaTimes, FaReact } from 'react-icons/fa';

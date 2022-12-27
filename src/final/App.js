@@ -6,12 +6,18 @@ import { AppProvider } from './context';
 import About from './pages/About';
 import Kittens from './pages/Kittens';
 import Error from './pages/Error';
+import Contact from './pages/Contact'
+import Resources from './pages/Resources';
 import SharedLayout from './pages/SharedLayout';
 import SingleKitten from './pages/SingleKitten';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import ProtectedRoute from './pages/ProtectedRoute';
 import SharedKittenLayout from './pages/SharedKittenLayout';
+
+
+
+
 function App() {
   const [user, setUser] = useState(null);
   return (
@@ -26,7 +32,8 @@ function App() {
             <Route index element={<Kittens />} />
             <Route path=':kittenId' element={<SingleKitten />} />
           </Route>
-
+            <Route path='resources' element={<Resources />} />
+            <Route path='contact' element={<Contact />} />
           <Route path='login' element={<Login setUser={setUser}></Login>} />
           <Route
             path='dashboard'
