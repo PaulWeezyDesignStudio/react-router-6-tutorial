@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
+import './index.css'
 import Home from './pages/Home';
+import { AppProvider } from './context';
 import About from './pages/About';
 import Kittens from './pages/Kittens';
 import Error from './pages/Error';
@@ -14,6 +16,7 @@ function App() {
   const [user, setUser] = useState(null);
   return (
     <BrowserRouter>
+    <AppProvider>
       <Routes>
         <Route path='/' element={<SharedLayout />}>
           <Route index element={<Home />} />
@@ -36,6 +39,7 @@ function App() {
           <Route path='*' element={<Error />} />
         </Route>
       </Routes>
+      </AppProvider>
     </BrowserRouter>
   );
 }

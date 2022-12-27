@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
-    <nav className='navbar'>
-      <NavLink
+    <nav className='flex justify-evenly text-xl py-4'>
+      <NavLink                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
         to='/'
         className={({ isActive }) => (isActive ? 'link active' : 'link')}
       >
