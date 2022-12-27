@@ -15,10 +15,10 @@ const Navbar = () => {
         About
       </NavLink>
       <NavLink
-        to='/products'
+        to='/kittens'
         className={({ isActive }) => (isActive ? 'link active' : 'link')}
       >
-        Products
+        Kittens
       </NavLink>
       <NavLink
         to='/login'

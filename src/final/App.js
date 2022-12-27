@@ -19,7 +19,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='about' element={<About />} />
 
-          <Route path='products' element={<SharedKittenLayout />}>
+          <Route path='kittens' element={<SharedKittenLayout />}>
             <Route index element={<Kittens />} />
             <Route path=':kittenId' element={<SingleKitten />} />
           </Route>
